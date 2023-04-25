@@ -1,0 +1,28 @@
+<body style="background-color: #222629">
+    {% extends "Base.html" %} 
+    {% block title %}Meal Prep{% endblock %}
+    {% block Content %}
+    <h1 style="color:#61892F;">
+        {% if food %}
+        {{food}}
+        {% endif %}
+    </h1><br>
+
+    <p style="color:whitesmoke;">
+        {% if des1 %}
+        <strong> Ingredients : </strong>{{des1}}
+        {% endif %}
+    </p><br>
+    <p style="color:whitesmoke;">
+        {% if des2 %}
+        <strong>Instructions :</strong>{{des2}}
+        {% endif %}
+    </p><br>
+    <p style="color:whitesmoke;">
+        {% if des3 %}
+        <strong> Yield : </strong>{{des3}}
+        {% endif %}
+    </p><br>
+    </div>
+    {% endblock %}
+</body>

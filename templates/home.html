@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+{% extends "Base.html" %} 
+{% block title %}Home{% endblock %}
+
+{% block Content %} 
+<head>
+    <h1 style="color:#86C232">
+        Our Digital Cook Book 
+    </h1>
+</head>
+
+<body style="background-color: #222629">
+
+    <style>
+        .grid{
+        display: grid;
+        place-items: center;
+    }
+    </style>
+    <article class="grid">
+        <div>
+            <p style="color:white;"> 
+            Hello, this website is a digital cook book the purpose of this website is to make a meal planning easy! 
+            This website can make meal planning more efficient and convenient for the YOU!, by providing you with a wide range of meal options,
+            eliminating the need for them to think of meal idea
+            </p>
+        </div>
+    </article>
+     
+
+   
+    
+
+    <div class="row">
+    <div class="col">
+        <div class="nav nav-pills">
+            <div class="nav-item dropdown">
+                <button class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Breakfast</button>
+                <div class="dropdown-menu">
+                    <form action="menu" method="POST">
+                        <p><input type="submit" value="Quinoa Oatmeal" name = "Meal"></p>
+                        <p><input type="submit" value="Veggie Tofu Chilaquiles" name="Meal"></p>
+                        <p><input type="submit" value="Basic Maple Granola" name="Meal"></p>
+                        <p><input type="submit" value="Breakfast Greens" name="Meal"></p>
+                        <p><input type="submit" value="Tofu Scramble Tacos" name="Meal"></p>
+                        <p><input type="submit" value="Brown Rice Bowl with Edamame" name="Meal"></p>
+                        <p><input type="submit" value="Whole Wheat Banana Pancakes" name="Meal"></p>
+                        <p><input type="submit" value="Cornmeal Waffles with Strawberry Syrup" name="Meal"></p>
+                        <p><input type="submit" value="To-Go Breakfast Bars" name="Meal"></p>
+                        <p><input type="submit" value="Whole Wheat Biscuits" name="Meal"></p>
+                        <p><input type="submit" value="Biscuits and Gravy" name="Meal"></p>
+                        <p><input type="submit" value="Oat Flour Griddle Cakes" name="Meal"></p>
+                        <p><input type="submit" value="Sourdough French Toast" name="Meal"></p>
+                        <p><input type="submit" value="Maple Berry Grits" name="Meal"></p>
+                        <p><input type="submit" value="Baked Okra and Potato Hash" name="Meal"></p>
+                        <p><input type="submit" value="Fruit Salad Smoothie" name="Meal"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="nav nav-pills">
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Lunch</a>
+                <div class="dropdown-menu">
+                    <form action="menu" method="post">
+                        <p><input type="submit" value="Almond Caesar Salad" name="Meal"></p>
+                        <p><input type="submit" value="Spiced Chickpea Wraps" name="Meal"></p>
+                        <p><input type="submit" value="Moroccan Spiced Couscous" name="Meal"></p>
+                        <p><input type="submit" value="Roasted Broccoli and Millet Pilaf" name="Meal"></p>
+                        <p><input type="submit" value="Lemon-Mint Quinoa" name="Meal"></p>
+                        <p><input type="submit" value="Roasted Potato Salad" name="Meal"></p>
+                        <p><input type="submit" value="Braised Winter Cabbage and Potatoes" name="Meal"></p>
+                        <p><input type="submit" value="Roasted Beet and Quinoa Salad" name="Meal"></p>
+                        <p><input type="submit" value="Vietnamese Rice Noodle Salad" name="Meal"></p>
+                        <p><input type="submit" value="Smoked Almond and Chickpea Salad Sammies" name="Meal"></p>
+                        <p><input type="submit" value="Tempeh and Carrot Sandwiches" name="Meal"></p>
+
+
+
+
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="nav nav-pills">
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Dinner</a>
+                <div class="dropdown-menu">
+                    <form action="menu" method="post">
+                        <p><input type="submit" value="Black Bean Tortas" name="Meal"></p>
+                        <p><input type="submit" value="Mushroom and Spinach Lasagna" name="Meal"></p>
+                        <p><input type="submit" value="Sweet Potato Squash Black Bean Enchiladas" name="Meal"></p>
+                        <p><input type="submit" value="Mango Curry" name="Meal"></p>
+                        <p><input type="submit" value="Cauliflower Cream Pasta" name="Meal"></p>
+                        <p><input type="submit" value="Roasted Chickpea and Broccoli Burritos" name="Meal"></p>
+                        <p><input type="submit" value="Roasted Beer and Lime Cauliflower Tacos" name="Meal"></p>
+                        <p><input type="submit" value="Tempeh Peanut Noodles" name="Meal"></p>
+                        <p><input type="submit" value="White Bean and Red Lentil Burgers" name="Meal"></p>
+                        <p><input type="submit" value="BBQ Bean Burritos" name="Meal"></p>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: black;
+      color: white;
+      text-align: center;
+    }
+    </style>
+    
+    <div class="footer">
+      <p>Authors: Henry, Jose, Ralph, and Ozzy</p>
+    </div>
+
+</body>
+
+{% endblock %}
+</html>
